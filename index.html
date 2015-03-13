@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es" data-ng-app="core">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+        <title>Titulo aqui</title>
+        <meta name="description" content="Descripcion aqui.">
+
+        <!-- Dependencias -->
+        <link rel="stylesheet" href="assets/css/angular-material.min.css">
+        <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
+
+        <!-- CORE -->
+        <link rel="stylesheet" href="assets/css/style.min.css">
+
+    </head>
+    <body>
+
+        <div data-ng-controller="Controller" data-ng-hide="loading">
+            <figure>
+                <img src="assets/img/loading.gif" />
+            </figure>
+        </div>
+
+        <div data-ng-view></div>
+
+        <!-- Dependencias -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/angular.min.js"></script>
+        <script src="assets/js/angular-route.min.js"></script>
+        <script src="assets/js/angular-animate.min.js"></script>
+        <script src="assets/js/angular-aria.min.js"></script>
+        <script src="assets/js/angular-material.min.js"></script>
+
+        <!-- CORE -->
+        <script src="assets/js/main.min.js"></script>    
+    </body>
+</html>
