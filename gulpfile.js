@@ -9,6 +9,7 @@ var minifyJS    = require('gulp-uglify');
 var reload      = browserSync.reload;
 var rename      = require('gulp-rename');
 var stylus      = require('gulp-stylus');
+var nib         = require('nib');
 var jshint      = require('gulp-jshint');
 
 //Archivos a copiar a dist
@@ -64,7 +65,7 @@ var _BASE = [
 gulp.task('minify-css', function () {
     gulp.src(_STYLUS)
     .pipe(concat('style.min.styl'))
-    .pipe(stylus())
+    .pipe(stylus({ use: nib(),  import: ['nib']}))
     .pipe(minifyCSS())
     .pipe(gulp.dest('dist/assets/css'))
     .pipe(reload({stream: true, once: true}));
