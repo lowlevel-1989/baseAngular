@@ -15,7 +15,7 @@
     ];
 
     var _THIRD_PARTY_APPS = [
-            'ngMaterial'
+        'ngMaterial'
     ]; 
 
 

@@ -1,5 +1,4 @@
 (function(){
-    
     angular.module('routes', ['ngRoute'])
   
     .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
