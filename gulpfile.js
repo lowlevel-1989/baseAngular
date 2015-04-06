@@ -6,6 +6,7 @@ var gulp        = require('gulp');
 var minifyCSS   = require('gulp-minify-css');
 var minifyHTML  = require('gulp-minify-html');
 var minifyJS    = require('gulp-uglify');
+var htmlify     = require('gulp-angular-htmlify');
 var reload      = browserSync.reload;
 var rename      = require('gulp-rename');
 var stylus      = require('gulp-stylus');
@@ -25,6 +26,10 @@ var _PROYECTOJS = [
 var _HTML = [
     'app/shared/**/*.html', 
     'app/components/**/*.html'
+];
+
+var _PREFIXES = [
+    'fc-'
 ];
 
 var _STYLUS = 'assets/stylus/**/*.styl';
@@ -88,6 +93,9 @@ gulp.task('lint', function () {
 gulp.task('minify-html', function () {
     gulp.src(_HTML)
     .pipe(rename({suffix: '.min'}))
+    .pipe(htmlify({
+        customPrefixes: _PREFIXES
+    }))
     .pipe(minifyHTML())
     .pipe(gulp.dest('dist/templates'))
     .pipe(reload({stream: true, once: true}));
