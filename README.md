@@ -41,7 +41,7 @@ This directory structure is much harder to read and understand from the get go. 
 
 ###index.html
 
-The index.html lives at the root of front-end structure. The index.html file will primarily handle loading in all the libraries and Angular elements.
+The index.html lives at the root of front-end structure. The <b>index.html</b> file will primarily handle loading in all the libraries and Angular elements.
 
 ###Assets Folder
 
@@ -49,21 +49,24 @@ The assets folder is also pretty standard. It will contain all the assets needed
 
 ###App Folder
 
-This is where the meat of your AngularJS app will live. We have two subfolders in here and a couple JavaScript files at the root of the folder. The <b>app.module.js</b> file will handle the setup of your app, load in AngularJS dependencies and so on. The app.route.js file will handle all the routes and the route configuration. After that we have two subfolders – components and shared. Let’s dive into those next.
+This is where the meat of your AngularJS app will live. We have two subfolders in here and a couple JavaScript files at the root of the folder. The <b>app.module.js</b> file will handle the setup of your app, load in AngularJS dependencies and so on. The <b>app.route.js</b> file will handle all the routes and the route configuration. After that we have two subfolders – components and shared. Let’s dive into those next.
 
 ###Components Folder
 
-The components folder will contain the actual sections for your Angular app. These will be the static views ,directives and services for that specific section of the site (think an admin users section, gallery creation section, etc). Each page should have it’s own subfolder with it’s own controller, services, and HTML files.
+The <b>components</b> folder will contain the actual sections for your Angular app. These will be the static views ,directives and services for that specific section of the site (think an admin users section, gallery creation section, etc). Each page should have it’s own subfolder with it’s own controller, services, and HTML files.
 
 Each component here will resemble a mini-MVC application by having a view, controller and potentially services file(s). If the component has multiple related views, it may be a good idea to further separate these files into ‘views’, ‘controllers’, ‘services’ subfolders.
 
 This can be seen as the simpler folder structure shown earlier in this article, just broken down into sections. So you could essentially think of this as multiple mini Angular applications inside of your giant Angular application.
-Shared Folder
 
-The shared folder will contain the individual features that your app will have. These features will ideally be directives that you will want to reuse on multiple pages.
+###Shared Folder
+
+The <b>shared</b> folder will contain the individual features that your app will have. These features will ideally be directives that you will want to reuse on multiple pages.
 
 Features such as article posts, user comments, sliders, and others should be crafted as AngularJS Directives. Each component here should have it’s own subfolder that contains the directive JavaScript file and the template HTML file.
 
 In some instances, a directive may have it’s own services JavaScript file, and in the case that it does it should also go into this subfolder.
+
+* [Estructure base](https://scotch.io/tutorials/angularjs-best-practices-directory-structure)
 
 #LEGAL
