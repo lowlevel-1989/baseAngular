@@ -11,10 +11,13 @@
 	bower install
 #USAGE
 ##GULP COMMANDS
+```
 gulp debug: find bug in the project.
 gulp dist:  Build and optimize the current project, ready for deployment. This includes linting as well as image, script, stylesheet and HTML optimization and minification. 
 gulp server: This outputs an IP address you can use to locally test and another that can be used on devices connected to your network.
 gulp clean: Delete folder dist from the project.
+```
+
 ##ESTRUCTURE
 
 ```
@@ -67,6 +70,27 @@ Features such as article posts, user comments, sliders, and others should be cra
 
 In some instances, a directive may have it’s own services JavaScript file, and in the case that it does it should also go into this subfolder.
 
-* [Estructure base](https://scotch.io/tutorials/angularjs-best-practices-directory-structure)
+* [Estructure base: https://scotch.io/tutorials/angularjs-best-practices-directory-structure](https://scotch.io/tutorials/angularjs-best-practices-directory-structure)
 
 #LEGAL
+
+Copyright (c) 2015 Vinicio Valbuena.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
