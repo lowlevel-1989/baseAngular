@@ -17,7 +17,7 @@ gulp server: This outputs an IP address you can use to locally test and another 
 gulp clean: Delete folder dist from the project.
 ##ESTRUCTURE
 
-'''
+```
 ├── app
 │   ├── app.module.js
 │   ├── app.routes.js
@@ -42,6 +42,6 @@ gulp clean: Delete folder dist from the project.
 ├── index.html
 ├── package.json
 └── README.md
-'''
+```
 
 #LEGAL
