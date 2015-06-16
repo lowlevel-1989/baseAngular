@@ -1,40 +1,41 @@
 (function(){
 
-    var _APP = 'core';
+   'use strict';
 
-    var _API = 'http://formatcomtesis.com.ve/api/';
+   var _APP = 'core';
 
-    var _SERVICES = [   
-            
-    ];
+   var _API = 'http://api.formatcom.com/';
 
-    var _CONTROLLERS = [
-    ];
+   var _SERVICES = [
+   ];
 
-    var _DIRECTIVES = [
-    ];
+   var _CONTROLLERS = [
+   ];
 
-    var _THIRD_PARTY_APPS = [
-        'ngMaterial'
-    ]; 
+   var _DIRECTIVES = [
+   ];
 
-
-    var _DEPENDENCIES = _SERVICES.concat(_CONTROLLERS); 
-        _DEPENDENCIES = _DEPENDENCIES.concat(_DIRECTIVES);
-        _DEPENDENCIES = _DEPENDENCIES.concat(_THIRD_PARTY_APPS);
-        _DEPENDENCIES = _DEPENDENCIES.concat(['routes']);
+   var _THIRD_PARTY_APPS = [
+      'ngMaterial'
+   ]; 
 
 
-    angular.module(_APP, _DEPENDENCIES)
-    
-    .factory('api', function() {
-        return {
-            url: _API
-        };
-    })
+   var _DEPENDENCIES = _SERVICES.concat(_CONTROLLERS); 
+       _DEPENDENCIES = _DEPENDENCIES.concat(_DIRECTIVES);
+       _DEPENDENCIES = _DEPENDENCIES.concat(_THIRD_PARTY_APPS);
+       _DEPENDENCIES = _DEPENDENCIES.concat(['routes']);
 
-    .controller('Controller', ['$scope', function ($scope) {
-        $scope.loading = true;
-    }]);
+
+   angular.module(_APP, _DEPENDENCIES)
+
+   .factory('api', function() {
+      return {
+         url: _API
+      };
+   })
+
+   .controller('Controller', ['$scope', function ($scope) {
+      $scope.loading = true;
+   }]);
 
 })();
