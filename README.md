@@ -14,7 +14,9 @@
 ```
 gulp debug: find bug in the project.
 gulp dist:  Build and optimize the current project, ready for deployment. This includes linting as well as image, script, stylesheet and HTML optimization and minification. 
+gulp dist --debug: -------------
 gulp server: This outputs an IP address you can use to locally test and another that can be used on devices connected to your network.
+gulp server --watch: -----------
 gulp clean: Delete folder dist from the project.
 ```
 

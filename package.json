@@ -1,18 +1,39 @@
 {
-  "dependencies": {
-    "browser-sync": "^1.8.3",
-    "del": "^1.1.1",
-    "gulp": "^3.8.10",
-    "gulp-angular-htmlify": "^2.1.1",
-    "gulp-concat": "^2.4.2",
-    "gulp-jshint": "^1.9.2",
-    "gulp-minify-css": "^0.3.11",
-    "gulp-minify-html": "^0.1.8",
-    "gulp-rename": "^1.2.0",
-    "gulp-stylus": "^1.3.4",
-    "gulp-uglify": "^1.0.2",
-    "jshint-stylish": "^1.0.0",
-    "nib": "~1.1.0"
+  "name": "baseangularjs",
+  "version": "0.2.0",
+  "description": "- Node.js\r \t- bower\r \t- gulp\r ##INSTALING\r ###LINUX / MAC OS X\r \tsudo npm install bower --global\r \tsudo npm install gulp  --global\r \tnpm   install\r \tbower install\r #USAGE\r ##GULP COMMANDS\r ```\r gulp debug: find bug in the project.\r gulp dist:  Build and optimize the current project, ready for deployment. This includes linting as well as image, script, stylesheet and HTML optimization and minification. \r gulp server: This outputs an IP address you can use to locally test and another that can be used on devices connected to your network.\r gulp clean: Delete folder dist from the project.\r ```",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "private": true
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/formatcom/baseAngularjs.git"
+  },
+  "author": "Vinicio Valbuena (FormatCom)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/formatcom/baseAngularjs/issues"
+  },
+  "homepage": "https://github.com/formatcom/baseAngularjs#readme",
+  "devDependencies": {
+    "browser-sync": "^2.9.6",
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-angular-htmlify": "^2.3.0",
+    "gulp-angular-templatecache": "^1.7.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-expect-file": "0.0.7",
+    "gulp-if": "^1.2.5",
+    "gulp-jshint": "^1.11.2",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-minify-html": "^1.0.4",
+    "gulp-strip-debug": "^1.0.2",
+    "gulp-stylus": "^2.0.7",
+    "gulp-uglify": "^1.4.1",
+    "jshint-stylish": "^2.0.1",
+    "nib": "^1.1.0",
+    "path-exists": "^2.0.0"
+  }
 }

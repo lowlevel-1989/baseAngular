@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html lang="es" data-ng-app="core">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
-        <title>Titulo aqui</title>
-        <meta name="description" content="Descripcion aqui.">
-        <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+      <title>Titulo aqui</title>
+      <meta name="description" content="Descripcion aqui.">
+      <meta content="TITULO"   property="og:title">
+      <meta content="assets/img/IMAGEN"   property="og:image">
+      <meta content="DESCRIPCION"         property="og:description">
+      <link rel="icon" type="image/png"   href="assets/img/favicon.png" />
 
-        <!-- Base -->
-        <base href="/" target="_blank">
+      <!-- Dependencias -->
+      <link rel="stylesheet" href="assets/css/angular-material.min.css">
+      <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
 
-        <!-- Dependencias -->
-        <link rel="stylesheet" href="assets/css/angular-material.min.css">
-        <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
+      <!-- Google Fonts -->
 
-	<!-- Google Fonts -->
+      <!-- CORE -->
+      <link rel="stylesheet" href="assets/css/style.min.css">
 
-        <!-- CORE -->
-        <link rel="stylesheet" href="assets/css/style.min.css">
+   </head>
+   <body>
 
-    </head>
-    <body>
+      <div data-ng-controller="Controller" data-ng-hide="loading">
+         <figure>
+            <img src="assets/img/loading.gif" />
+         </figure>
+      </div>
 
-        <div data-ng-controller="Controller" data-ng-hide="loading">
-            <figure>
-                <img src="assets/img/loading.gif" />
-            </figure>
-        </div>
+      <div data-ng-view></div>
 
-        <div data-ng-view></div>
+      <!-- Dependencias JS-->
+      <script src="assets/js/jquery.min.js"></script>
+      
 
-        <!-- Dependencias -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/angular.min.js"></script>
-        <script src="assets/js/angular-route.min.js"></script>
-        <script src="assets/js/angular-animate.min.js"></script>
-        <script src="assets/js/angular-aria.min.js"></script>
-        <script src="assets/js/angular-material.min.js"></script>
+      <!-- Dependencias AngularJS-->
+      <script src="assets/js/angular.min.js"></script>
+      <script src="assets/js/angular-route.min.js"></script>
+      <script src="assets/js/angular-animate.min.js"></script>
+      <script src="assets/js/angular-aria.min.js"></script>
+      <script src="assets/js/angular-material.min.js"></script>
+      <script src="assets/js/angular-local-storage.min.js"></script>
 
-        <!-- CORE -->
-        <script src="assets/js/main.min.js"></script>    
-    </body>
+      <!-- CORE -->
+      <script src="assets/js/templates.js"></script>
+      <script src="assets/js/main.min.js"></script>    
+   </body>
 </html>
