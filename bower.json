@@ -1,17 +1,27 @@
 {
-  "name": "baseAngularjs",
-  "version": "0.0.1",
+  "name": "baseangularjs",
+  "version": "0.2.1",
   "authors": [
-    "Vinicio Valbuena <formatcomvinicio@gmail.com>"
+    "Vinicio Valbuena <<formatcomvinicio@gmail.com>>"
   ],
-  "license": "FormatCom",
-  "private": true,
+  "description": "- Node.js\r \t- bower\r \t- gulp\r ##INSTALING\r ###LINUX / MAC OS X\r \tsudo npm install bower --global\r \tsudo npm install gulp  --global\r \tnpm   install\r \tbower install\r #USAGE\r ##GULP COMMANDS\r ```\r gulp debug: find bug in the project.\r gulp dist:  Build and optimize the current project, ready for deployment. This includes linting as well as image, script, stylesheet and HTML optimization and minification. \r gulp server: This outputs an IP address you can use to locally test and another that can be used on devices connected to your network.\r gulp clean: Delete folder dist from the project.\r ```",
+  "main": "gulpfile.js",
+  "license": "isc",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "/assets/libs/",
+    "test",
+    "tests"
+  ],
   "dependencies": {
-    "jquery": "~2.1.3",
-    "angular": "~1.3.13",
-    "angular-route": "~1.3.13",
+    "angular-animate": "1.3.x",
+    "angular-aria": "1.3.x",
+    "angular-local-storage": "~0.2.2",
     "angular-material": "0.8.2",
-    "mdi": "0.9.22-alpha",
-    "angular-local-storage": "~0.2.2"
+    "angular-route": "~1.3.13",
+    "jquery": "~2.1.3",
+    "mdi": "0.9.22-alpha"
   }
 }

@@ -149,6 +149,7 @@ gulp.task('copyFonts', function(){
 
 
 gulp.task('watch', function() {
+   _DEBUG = true;
    // Cambios principales
    gulp.watch(_PROYECTOJS, ['lint', 'minify-js']);
    gulp.watch(_STYLUS,     ['minify-css']);
