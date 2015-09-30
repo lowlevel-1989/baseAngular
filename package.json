@@ -1,6 +1,6 @@
 {
   "name": "baseangularjs",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "- Node.js\r \t- bower\r \t- gulp\r ##INSTALING\r ###LINUX / MAC OS X\r \tsudo npm install bower --global\r \tsudo npm install gulp  --global\r \tnpm   install\r \tbower install\r #USAGE\r ##GULP COMMANDS\r ```\r gulp debug: find bug in the project.\r gulp dist:  Build and optimize the current project, ready for deployment. This includes linting as well as image, script, stylesheet and HTML optimization and minification. \r gulp server: This outputs an IP address you can use to locally test and another that can be used on devices connected to your network.\r gulp clean: Delete folder dist from the project.\r ```",
   "main": "gulpfile.js",
   "scripts": {
