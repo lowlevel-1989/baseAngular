@@ -21,11 +21,8 @@ var stripDebug    = require('gulp-strip-debug');
 //Archivos a copiar a dist
 
 var _PROYECTOJS = [
-   'app/app.module.js',
-   'app/app.routes.js',
-   'app/shared/**/*.js',
-   'app/components/**/*.js',
-   'assets/js/**/*.js'
+   'app/index.js',
+   'app/**/*.js'
 ];
 
 var _HTML = [
@@ -87,7 +84,8 @@ gulp.task('minify-css', function(){
 });
 
 gulp.task('minify-js', function(){
-   gulp.src(_PROYECTOJS)
+   gulp.src(_PROYECTOJS[0])
+   .pipe(browserify())
    .pipe(concat('main.min.js'))
    .pipe(gulpif(!_DEBUG, minifyJS()))
    .pipe(gulpif(!_DEBUG, stripDebug()))

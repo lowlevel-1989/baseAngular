@@ -1,21 +1,15 @@
-(function(){
+angular.module('routes', ['ngRoute'])
 
-   'use strict';
+.config(['$routeProvider', '$locationProvider', '$sceProvider', function ($routeProvider, $locationProvider, $sceProvider) {
 
-   angular.module('routes', ['ngRoute'])
+   $routeProvider.when('/working', {
+      templateUrl: '/working/view.html',
+   })
+   .otherwise({
+      redirectTo: '/working'
+   });
 
-      .config(['$routeProvider', '$locationProvider', '$sceProvider', function ($routeProvider, $locationProvider, $sceProvider) {
+   $locationProvider.hashPrefix('!');
+   $sceProvider.enabled(false);
 
-         $routeProvider.when('/working', {
-            templateUrl: '/working/view.html',
-         })
-         .otherwise({
-            redirectTo: '/working'
-         });
-
-         $locationProvider.hashPrefix('!');
-         $sceProvider.enabled(false);
-
-      }]);
-
-})();
+}]);
